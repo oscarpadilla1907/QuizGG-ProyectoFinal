@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap');
+
+body{
+    background-color: rgb(59, 59, 59);
+}
+
+.left-rect{
+    display: flex;
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 80px rgb(0, 0, 0);
+}
+
+.right-rect{
+    display: flex;
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    right: 10%;
+    top: 10%;
+
+    background: #009e1a;
+    box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.459);
+}
+
+.welcome{
+    position: absolute;
+    left: 30%;
+    top: 5%;
+
+    color: white;
+    font-family: 'Sora', sans-serif;
+    font-size: 50px;
+}
+
+.register-tex{
+    position: absolute;
+    left: 18%;
+    top: 25%;
+
+    color: white;
+    font-family: 'Sora', sans-serif;
+    font-size: 30px;
+}
+
+.line1{
+    position: absolute;
+    width: 182.01px;
+    height: 0px;
+    left: 35%;
+    top: 15%;
+    background-color: white;
+
+    border: 1px solid #FFFFFF;
+    transform: rotate(-0.63deg);
+}
+
+.icon{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 41%;
+    top: 45%;
+}
+
+.register-tex2{
+    position: absolute;
+    left: 23%;
+    top: 70%;
+
+    color: white;
+    font-family: 'Sora', sans-serif;
+    font-size: 30px;
+}
+
+#btn1{
+    background-color: black;
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    left: 35%;
+    top: 83%;
+
+    border: 2px solid #FFFFFF;
+    font-family: 'Sora', sans-serif;
+    font-size: 25px;
+    box-sizing: border-box;
+    transition: all 0.7s;
+}
+
+#btn1:hover{
+    transform:scale(1.1);
+    transition: all 0.7s;
+}
+
+.login-text{
+    position: absolute;
+    left: 32%;
+    top: 5%;
+
+    color: rgb(0, 0, 0);
+    font-family: 'Sora', sans-serif;
+    font-size: 50px;
+}
+
+.line2{
+    position: absolute;
+    width: 182.01px;
+    height: 0px;
+    left: 37%;
+    top: 15%;
+    background-color: rgb(0, 0, 0);
+
+    border: 1px solid #000000;
+    transform: rotate(-0.63deg);
+}
+
+.user-icon{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 20%;
+    top: 47%;
+}
+
+.line-user{
+    position: absolute;
+    width: 437px;
+    height: 0px;
+    left: 20%;
+    top: 53%;
+
+    border: 1px solid #000000;
+    transform: rotate(0.27deg);
+    background-color: black;
+}
+
+.input-user{
+    position: absolute;
+    width: 392px;
+    height: 0px;
+    left: 27%;
+    top: 46.8%;
+    height: 40px;
+    border:rgba(0, 0, 0, 0);
+    color: black;
+    font-family: 'Sora', sans-serif;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.input-user:focus{
+    border: none;
+    outline: none;    
+}
+
+.input-user:active{
+    border: none;    
+}
+
+.pass-icon{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 20%;
+    top: 58%;
+}
+
+.pass-line{
+    position: absolute;
+    width: 437px;
+    height: 0px;
+    left: 20%;
+    top: 64%;
+
+    border: 1px solid #000000;
+    transform: rotate(0.27deg);
+    background-color: black;
+}
+
+.input-pass{
+    position: absolute;
+    width: 392px;
+    height: 0px;
+    left: 27%;
+    top: 57.8%;
+    height: 40px;
+    border:rgba(0, 0, 0, 0);
+    color: black;
+    font-family: 'Sora', sans-serif;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.input-pass:focus{
+    border: none;
+    outline: none;    
+}
+
+.input-pass:active{
+    border: none;    
+}
+
+#btn2{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    left: 35%;
+    top: 83%;
+
+    border: 2px solid #000000;
+    font-family: 'Sora', sans-serif;
+    font-size: 25px;
+    box-sizing: border-box;
+    transition: all 0.7s;
+    color: black;
+}
+
+#btn2:hover{
+    transform:scale(1.1);
+    transition: all 0.7s;
+}
+
+.icon-profile{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 23%;
+    left: 43%;
+}
+
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    left: 0;
+    top: 100%;
+
+    background: rgba(0, 0, 0, 0.411);
+}
+
+.footer-text{
+    color:white;
+    font-family: 'Sora', sans-serif;
+    padding-top: 15px;
+}
