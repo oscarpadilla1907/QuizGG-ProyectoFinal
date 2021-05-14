@@ -1,3 +1,4 @@
+//CONSTANTE DE LA URL STRAPI
 const URL = 'http://localhost:8082';
 
 async function getRequest(url) {
@@ -12,50 +13,51 @@ async function getRequest(url) {
         .then(data => data);
 }
 
+//FUNCION PARA RECOGER LOS LEVELS DE STRAPI
 async function getLevels() {
     const result = await getRequest(URL + '/Levels');
 
     for (let i = 0; i < result.length; i++) {
 
-        //CONTAINER
+        //CREACION DEL DIV CONTAINER
         let div_container = document.createElement('div');
         div_container.className = 'container';
 
-        //BOOTSTRAP CARD
+        //CREACION DE LA BOOTSTRAP CARD Y SE AÑADE AL CONTAINER
         let div_card = document.createElement('div');
         div_card.className = 'card mb-3';
         div_card.style = 'max-width: 540px; max-height: 160px;';
         div_container.appendChild(div_card);
 
-        //ROW CARD
+        //CREACION DE ROW CARD Y SE AÑADE A LA CARD
         let div_row = document.createElement('div');
         div_row.className = 'row g-0';
         div_row.style = 'max-width: 540px; max-height: 160px;';
         div_card.appendChild(div_row);
 
-        //COL-MD-4 FOTO
+        //CREACION DE COL-MD-4 FOTO Y SE AÑADE AL ROW
         let div_col_img = document.createElement('div');
         div_col_img.className = 'col-md-4';
         div_col_img.style = 'max-width: 540px; max-height: 160px;';
         div_row.appendChild(div_col_img);
 
-        //IMAGEN div_col_img
+        //IMAGEN div_col_img Y SE AÑADE AL COL-MD-4
         let img = document.createElement('img');
         img.src = result[i].imagen;
         img.className = 'img-card';
         div_col_img.appendChild(img);
 
-        //COL-MD-8
+        //CREACION COL-MD-8 Y SE AÑADE AL ROW
         let div_md_8 = document.createElement('div');
         div_md_8.className = 'col-md-8';
         div_row.appendChild(div_md_8);
 
-        //CARD BODY
+        //CREACION DE CARD BODY Y SE AÑADE A MD-8
         let div_card_body = document.createElement('div');
         div_card_body.className = 'card-body';
         div_md_8.appendChild(div_card_body);
 
-        //CARD BODY ELEMENTS
+        //CREACION DE LOS CARD BODY ELEMENTS
         let play = document.createElement('p');
         play.className = 'preview';
         play.innerText = 'Play';
