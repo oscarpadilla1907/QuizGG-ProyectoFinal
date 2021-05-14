@@ -5,47 +5,61 @@
 
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-        <link rel="stylesheet" href="static/css/register.css">
+        <link rel="stylesheet" href="/src/static/css/register.css">
     </head>
 
     <body>
-        <div class="left-rect"><!-- Iniciar Sesion -->
+
+        <!-- REGISTER DIV -->
+        <div class="left-rect">
+
+            <!-- TEXTO PRINCIPAL -->
             <p class="login-text">
                 Registrate
             </p>
-            <img src="static/img/profile.png" class="icon-profile">
+            <img src="/src/static/img/profile.png" class="icon-profile">
 
-            <!-- Input User Name -->
-            <img src="static/img/avatar.png" class="user-icon">
+            <!-- USER NAME INPUT -->
+            <img src="/src/static/img/avatar.png" class="user-icon">
             <input type="text" class="input-user" placeholder="User name">
             <div class="line-user"></div>
 
-            <!-- Input Password -->
-            <img src="static/img/padlock (1).png" class="pass-icon">
+            <!-- PASSWORD INPUT -->
+            <img src="/src/static/img/padlock (1).png" class="pass-icon">
             <input type="password" class="input-pass" placeholder="Password">
             <div class="pass-line"></div>
 
-            <!-- Boton -->
+            <!-- BOTON REGISTRAR (AUN NO FUNCIONAL) -->
             <a href="home.html"><button type="button" class="btn btn-dark" id="btn2">Register</button></a>
         </div>
 
+        <!-- DIV DE INFO E INCIO DE SESION -->
         <div class="right-rect">
+
+            <!-- TEXTO PRINCIPAL -->
             <p class="welcome">Welcome</p>
 
+            <!-- TEXTO SECUNDARIO -->
             <p class="register-tex">
                 Registrate para disfrutar de nuestros servicios.
             </p>
-            <img src="static/img/smartphone (1).png" class="icon">
+
+            <!-- ICONO DE LA PAGINA -->
+            <img src="/src/static/img/smartphone (1).png" class="icon">
+
+            <!-- BOTON DE IR AL LOGIN -->
             <p class="register-tex2">
                 ¿Ta tienes una cuenta?
             </p>
             <a href="login.html"><button type="button" class="btn btn-dark" id="btn1">Log in</button></a>
         </div>
 
+        <!-- FOOTER -->
         <center>
         <div class="footer">
             <p class="footer-text">QuizGG Copyright © Todos los derechos reservados </p>
         </div>
     </center>
+    
     </body>
 </html>
