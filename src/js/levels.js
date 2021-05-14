@@ -102,3 +102,4 @@ async function getLevels() {
         document.body.appendChild(div_container);
     }
 }
+
