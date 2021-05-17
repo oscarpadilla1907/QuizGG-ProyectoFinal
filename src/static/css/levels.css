@@ -210,3 +210,7 @@ body{
     transform: scale(1.1);
     transition: all 0.7s;
 }
+
+.hidden{
+    visibility: hidden;
+}

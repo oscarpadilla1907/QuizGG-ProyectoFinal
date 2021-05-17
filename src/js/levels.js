@@ -13,10 +13,12 @@ async function getRequest(url) {
 }
 
 async function getLevels() {
-    const result = await getRequest(URL + '/Levels');
+    console.log("hola1");
+    const result = await getRequest(URL+'/levels');
+    console.log(result)
 
     for (let i = 0; i < result.length; i++) {
-
+        console.log("hola");
         //CONTAINER
         let div_container = document.createElement('div');
         div_container.className = 'container';
@@ -68,11 +70,12 @@ async function getLevels() {
 
         let span_name_quiz = document.createElement('span');
         span_name_quiz.className = 'GG';
+        span_name_quiz.innerText = result[i].Name;
         card_title.appendChild(span_name_quiz);
 
         let card_text = document.createElement('p');
         card_text.className = 'card-text';
-        card_text.innerText = result[i].descripcion;
+        card_text.innerText = result[i].Descripcion;
         div_card_body.appendChild(card_text);
 
         //BARRA DE PROGRESO
@@ -80,11 +83,11 @@ async function getLevels() {
         div_progress.className = 'progress';
 
         let div_progress_bar = document.createElement('div');
-        if (result[i].dificultad == 'easy') {
+        if (result[i].Dificultad == 'Facil') {
             div_progress_bar.className = 'progress-bar w-25 bg-succes';
-        } else if (result[i].dificultad == 'medium') {
+        } else if (result[i].Dificultad == 'medium') {
             div_progress_bar.className = 'progress-bar w-50 bg-warning';
-        } else if (result[i].dificultad == 'hard') {
+        } else if (result[i].Dificultad == 'hard') {
             div_progress_bar.className = 'progress-bar w-75 bg-danger';
         }
 
@@ -92,11 +95,12 @@ async function getLevels() {
         div_progress_bar.setAttribute('aria-valuenow', '75');
         div_progress_bar.setAttribute('aria-valuemin', '0');
         div_progress_bar.setAttribute('aria-valuemax', '100');
-        div_progress_bar.innerText = result[i].dificultad;
+        div_progress_bar.innerText = result[i].Dificultad;
         div_progress.appendChild(div_progress_bar);
         div_card_body.appendChild(div_progress);
 
         //AÑADIR AL BODY
         document.body.appendChild(div_container);
+        document.getElementById('botonGenerar').className = 'hidden';
     }
 }
