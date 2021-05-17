@@ -1,4 +1,3 @@
-//CONSTANTE DE LA URL STRAPI
 const URL = 'http://localhost:8082';
 
 async function getRequest(url) {
@@ -13,58 +12,52 @@ async function getRequest(url) {
         .then(data => data);
 }
 
-//FUNCION PARA RECOGER LOS LEVELS DE STRAPI
 async function getLevels() {
     console.log("hola1");
     const result = await getRequest(URL+'/levels');
     console.log(result)
 
     for (let i = 0; i < result.length; i++) {
-<<<<<<< HEAD
         console.log("hola");
         //CONTAINER
-=======
-
-        //CREACION DEL DIV CONTAINER
->>>>>>> b60499554240b8d4fa7c2f769b8b5b5515380000
         let div_container = document.createElement('div');
         div_container.className = 'container';
 
-        //CREACION DE LA BOOTSTRAP CARD Y SE AÑADE AL CONTAINER
+        //BOOTSTRAP CARD
         let div_card = document.createElement('div');
         div_card.className = 'card mb-3';
         div_card.style = 'max-width: 540px; max-height: 160px;';
         div_container.appendChild(div_card);
 
-        //CREACION DE ROW CARD Y SE AÑADE A LA CARD
+        //ROW CARD
         let div_row = document.createElement('div');
         div_row.className = 'row g-0';
         div_row.style = 'max-width: 540px; max-height: 160px;';
         div_card.appendChild(div_row);
 
-        //CREACION DE COL-MD-4 FOTO Y SE AÑADE AL ROW
+        //COL-MD-4 FOTO
         let div_col_img = document.createElement('div');
         div_col_img.className = 'col-md-4';
         div_col_img.style = 'max-width: 540px; max-height: 160px;';
         div_row.appendChild(div_col_img);
 
-        //IMAGEN div_col_img Y SE AÑADE AL COL-MD-4
+        //IMAGEN div_col_img
         let img = document.createElement('img');
         img.src = result[i].imagen;
         img.className = 'img-card';
         div_col_img.appendChild(img);
 
-        //CREACION COL-MD-8 Y SE AÑADE AL ROW
+        //COL-MD-8
         let div_md_8 = document.createElement('div');
         div_md_8.className = 'col-md-8';
         div_row.appendChild(div_md_8);
 
-        //CREACION DE CARD BODY Y SE AÑADE A MD-8
+        //CARD BODY
         let div_card_body = document.createElement('div');
         div_card_body.className = 'card-body';
         div_md_8.appendChild(div_card_body);
 
-        //CREACION DE LOS CARD BODY ELEMENTS
+        //CARD BODY ELEMENTS
         let play = document.createElement('p');
         play.className = 'preview';
         play.innerText = 'Play';
@@ -111,4 +104,3 @@ async function getLevels() {
         document.getElementById('botonGenerar').className = 'hidden';
     }
 }
-

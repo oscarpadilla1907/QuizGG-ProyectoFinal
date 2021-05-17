@@ -50,36 +50,18 @@
         
         <!-- SCRIPT DE PRUEBA 
         <script>
-<<<<<<< HEAD
-=======
-
->>>>>>> b60499554240b8d4fa7c2f769b8b5b5515380000
             let contador = 0;
             let contador_card = 0;
             let div_container;
             let nprueba = 5;
             let controlador = 0;
-<<<<<<< HEAD
             function prueba() {
                 for (let i = 0; i < nprueba; i++) {
                     if (contador < 2) {
-=======
-
-            function prueba() {
-
-
-                for (let i = 0; i < nprueba; i++) {
-                    if (contador < 2) {
-
->>>>>>> b60499554240b8d4fa7c2f769b8b5b5515380000
                         //CONTROLADOR CONTAINER
                         if (contador == 0) {
                             div_container = document.createElement('div');
                         }
-<<<<<<< HEAD
-=======
-
->>>>>>> b60499554240b8d4fa7c2f769b8b5b5515380000
                         //SUMAMOS CONTADOR - CONTADOR_CARD - CONTROLADOR
                         console.log("sumamos contadores");
                         console.log("contador = "+contador);
@@ -87,57 +69,30 @@
                         contador = contador + 1;
                         contador_card = contador_card + 1;
                         controlador = controlador + 1;
-<<<<<<< HEAD
                         //CONTAINER
                         div_container.className = 'container';
-=======
-
-                        //CONTAINER
-                        div_container.className = 'container';
-
->>>>>>> b60499554240b8d4fa7c2f769b8b5b5515380000
                         //CARD
                         let div_card = document.createElement('div');
                         div_card.className = 'card';
                         div_container.appendChild(div_card);
-<<<<<<< HEAD
-=======
-
->>>>>>> b60499554240b8d4fa7c2f769b8b5b5515380000
                         //CARD HEADER
                         let card_header = document.createElement('h5');
                         card_header.className = 'card-header';
                         card_header.innerText = 'result[i].coins';
                         div_card.appendChild(card_header);
-<<<<<<< HEAD
-=======
-
->>>>>>> b60499554240b8d4fa7c2f769b8b5b5515380000
                         //CARD HEADER CHILDS
                         let img_header = document.createElement('img');
                         img_header.className = 'coin';
                         img_header.src = "/src/static/img/dollar.png";
                         card_header.appendChild(img_header);
-<<<<<<< HEAD
-=======
-
->>>>>>> b60499554240b8d4fa7c2f769b8b5b5515380000
                         //VER DIFICULTAD
                         let span_dificultad = document.createElement('span');
                         span_dificultad.innerText = 'result[i].dificultad';
                         card_header.appendChild(span_dificultad);
-<<<<<<< HEAD
-=======
-
->>>>>>> b60499554240b8d4fa7c2f769b8b5b5515380000
                         //CARD BODY
                         let card_body = document.createElement('div');
                         card_body.className = 'card-body';
                         div_card.appendChild(card_body);
-<<<<<<< HEAD
-=======
-
->>>>>>> b60499554240b8d4fa7c2f769b8b5b5515380000
                         //CARD BODY CHILDS
                         let card_title = document.createElement('h5');
                         card_title.className = 'card-title';
@@ -148,18 +103,10 @@
                         span_title.className = 'GG';
                         span_title.innerText = 'result[i].nombre';
                         card_title.appendChild(span_title);
-<<<<<<< HEAD
-=======
-
->>>>>>> b60499554240b8d4fa7c2f769b8b5b5515380000
                         let card_text = document.createElement('p');
                         card_text.className = 'card-text';
                         card_text.innerText = 'result[i].descripcion';
                         card_body.appendChild(card_text);
-<<<<<<< HEAD
-=======
-
->>>>>>> b60499554240b8d4fa7c2f769b8b5b5515380000
                         let unlock_button = document.createElement('a');
                         unlock_button.className = 'btn';
                         unlock_button.href = '#';
@@ -171,7 +118,6 @@
                         unlock_img.className = 'lock-img';
                         unlock_img.src = '/src/static/img/padlock.png';
                         unlock_button.appendChild(unlock_img);
-<<<<<<< HEAD
                         //SI HAY DOS CARTAS EN EL DIV_CONTAINER SE INSERTA EN EL BODY
                         if (contador == 2 && contador_card == 2){
                             //AÑADIR AL BODY EL CONTAINER
@@ -183,25 +129,6 @@
                         }else if(contador == 1 && contador_card == 1 && controlador == nprueba){
                             //AÑADIR AL BODY EL CONTAINER
                             document.body.appendChild(div_container);
-=======
-
-                        //SI HAY DOS CARTAS EN EL DIV_CONTAINER SE INSERTA EN EL BODY
-                        if (contador == 2 && contador_card == 2){
-
-                            //AÑADIR AL BODY EL CONTAINER
-                            document.body.appendChild(div_container);
-
-                            //RESETEAMOS LOS CONTADORES
-                            contador = 0;
-                            contador_card = 0;
-
-                        //SI SE QUEDA UNA CARTA SUELTA EN EL CONTAINER SE AÑADE AL BODY
-                        }else if(contador == 1 && contador_card == 1 && controlador == nprueba){
-
-                            //AÑADIR AL BODY EL CONTAINER
-                            document.body.appendChild(div_container);
-
->>>>>>> b60499554240b8d4fa7c2f769b8b5b5515380000
                             //RESETEAMOS EL CONTADOR
                             contador = 0;
                             contador_card = 0;
@@ -209,10 +136,6 @@
                     }
                 }
             }
-<<<<<<< HEAD
-=======
-
->>>>>>> b60499554240b8d4fa7c2f769b8b5b5515380000
         </script>
         -->
     </body>

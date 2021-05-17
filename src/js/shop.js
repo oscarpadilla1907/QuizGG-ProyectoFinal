@@ -104,17 +104,10 @@ async function getShop() {
                 unlock_img.className = 'lock-img';
                 unlock_img.src = '/src/static/img/padlock.png';
                 unlock_button.appendChild(unlock_img);
-<<<<<<< HEAD
 
                 //SI HAY DOS CARTAS EN EL DIV_CONTAINER SE INSERTA EN EL BODY
                 if (contador == 2 && contador_card == 2) {
 
-=======
-
-                //SI HAY DOS CARTAS EN EL DIV_CONTAINER SE INSERTA EN EL BODY
-                if (contador == 2 && contador_card == 2) {
-
->>>>>>> b60499554240b8d4fa7c2f769b8b5b5515380000
                     //AÑADIR AL BODY EL CONTAINER
                     document.body.appendChild(div_container);
 
