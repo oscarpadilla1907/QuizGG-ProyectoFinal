@@ -85,9 +85,9 @@ async function getLevels() {
         let div_progress_bar = document.createElement('div');
         if (result[i].Dificultad == 'Facil') {
             div_progress_bar.className = 'progress-bar w-25 bg-succes';
-        } else if (result[i].Dificultad == 'medium') {
+        } else if (result[i].Dificultad == 'Medio') {
             div_progress_bar.className = 'progress-bar w-50 bg-warning';
-        } else if (result[i].Dificultad == 'hard') {
+        } else if (result[i].Dificultad == 'Dificil') {
             div_progress_bar.className = 'progress-bar w-75 bg-danger';
         }
 
