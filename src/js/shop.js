@@ -17,7 +17,8 @@ async function getRequest(url) {
 }
 
 async function getShop() {
-    const result = await getRequest(URL + '/Levels');
+    const result = await getRequest(URL + '/levels');
+    document.getElementById('botonGenerar').className = 'hidden';
 
     for (let i = 0; i < result.length; i++) {
         if (result[i].state == "lock") {
@@ -47,7 +48,7 @@ async function getShop() {
                 //CARD HEADER
                 let card_header = document.createElement('h5');
                 card_header.className = 'card-header';
-                card_header.innerText = result[i].precio;
+                card_header.innerText = result[i].Precio+' ';
                 div_card.appendChild(card_header);
 
                 //CARD HEADER CHILDS
@@ -59,15 +60,15 @@ async function getShop() {
                 //VER DIFICULTAD
                 let span_dificultad = document.createElement('span');
 
-                if (result[i].dificultad == 'facil') {
+                if (result[i].Dificultad == 'Facil') {
                     span_dificultad.className = 'facil';
-                } else if (result[i].dificultad == 'medium') {
+                } else if (result[i].Dificultad == 'medium') {
                     span_dificultad.className = 'mid';
                 } else {
                     span_dificultad.className = 'hard';
                 }
 
-                span_dificultad.innerText = result[i].dificultad;
+                span_dificultad.innerText = result[i].Dificultad;
                 card_header.appendChild(span_dificultad);
 
                 //CARD BODY
@@ -84,12 +85,12 @@ async function getShop() {
                 //SPAN DE CARD TITLE
                 let span_title = document.createElement('span');
                 span_title.className = 'GG';
-                span_title.innerText = result[i].nombre;
+                span_title.innerText = result[i].Name;
                 card_title.appendChild(span_title);
 
                 let card_text = document.createElement('p');
                 card_text.className = 'card-text';
-                card_text.innerText = result[i].descripcion;
+                card_text.innerText = result[i].Descripcion;
                 card_body.appendChild(card_text);
 
                 let unlock_button = document.createElement('a');
@@ -116,7 +117,7 @@ async function getShop() {
                     contador_card = 0;
 
                     //SI SE QUEDA UNA CARTA SUELTA EN EL CONTAINER SE AÑADE AL BODY
-                } else if (contador == 1 && contador_card == 1 && controlador == nprueba) {
+                } else if (contador == 1 && contador_card == 1 && controlador == result.length) {
 
                     //AÑADIR AL BODY EL CONTAINER
                     document.body.appendChild(div_container);
