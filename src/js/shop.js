@@ -62,7 +62,7 @@ async function getShop() {
 
                 if (result[i].Dificultad == 'Facil') {
                     span_dificultad.className = 'facil';
-                } else if (result[i].Dificultad == 'medium') {
+                } else if (result[i].Dificultad == 'Medio') {
                     span_dificultad.className = 'mid';
                 } else {
                     span_dificultad.className = 'hard';

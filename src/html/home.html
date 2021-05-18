@@ -13,7 +13,7 @@
 
         <!-- MONEDAS Y USUARIO -->
         <div class="user">
-            <p class="user-name">Oscar</p>
+            <p class="user-name" id="user">Oscar</p>
         </div>
         <div class="user-image">
             <img src="/src/static/img/profile.png" class="user-png">
@@ -107,6 +107,13 @@
                 </a>
             </div>
         </header>
+
+        <script>
+
+            let user = localStorage.getItem('username');
+            document.getElementById('user').innerText = user;
+
+        </script>
 
     </body>
 </html>

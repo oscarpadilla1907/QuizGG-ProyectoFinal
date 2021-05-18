@@ -48,16 +48,16 @@
 
             <!-- USER NAME INPUT -->
             <img src="/src/static/img/avatar.png" class="user-icon">
-            <input type="text" class="input-user" placeholder="User name">
+            <input type="text" class="input-user" placeholder="User name" id="email">
             <div class="line-user"></div>
 
             <!-- PASSWORD INPUT -->
             <img src="/src/static/img/padlock (1).png" class="pass-icon">
-            <input type="password" class="input-pass" placeholder="Password">
+            <input type="password" class="input-pass" placeholder="Password" id="password">
             <div class="pass-line"></div>
 
             <!-- BOTON DE LOGIN -->
-            <a href="home.html"><button type="button" class="btn btn-dark" id="btn2">Log in</button></a>
+            <button type="button" class="btn btn-dark" id="btn2" onclick="verificar()">Log in</button>
         </div>
 
         <!-- FOOTER -->
@@ -66,6 +66,13 @@
             <p class="footer-text">QuizGG Copyright © Todos los derechos reservados </p>
         </div>
     </center>
+
+    <script>
+        let mail = document.getElementById('email').value;
+        let password = document.getElementById('password').value;
+        getDates(mail);
+        postRequest(mail, password);
+    </script>
 
     </body>
 </html>

@@ -206,6 +206,49 @@ body{
     border: none;    
 }
 
+.input-mail{
+    position: absolute;
+    width: 392px;
+    height: 0px;
+    left: 27%;
+    top: 67.8%;
+    height: 40px;
+    border:rgba(0, 0, 0, 0);
+    color: black;
+    font-family: 'Sora', sans-serif;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.mail-icon{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 20%;
+    top: 68%;
+}
+
+.email-line{
+    position: absolute;
+    width: 437px;
+    height: 0px;
+    left: 20%;
+    top: 74%;
+
+    border: 1px solid #000000;
+    transform: rotate(0.27deg);
+    background-color: black;
+}
+
+.input-mail:focus{
+    border: none;
+    outline: none;    
+}
+
+.input-mail:active{
+    border: none;    
+}
+
 #btn2{
     background-color: rgb(255, 255, 255);
     position: absolute;
