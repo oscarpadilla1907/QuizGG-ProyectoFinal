@@ -5,6 +5,7 @@
 
         <link rel="stylesheet" href="/src/static/css/general.css">
         <link rel="stylesheet" href="/src/static/css/home.css">
+        <script type="text/javascript" src="/src/js/getDatasUser.js"></script>
     </head>
 
     <body>
@@ -20,7 +21,7 @@
         </div>
 
         <div class="coin-number">
-            <p class="coin-text"> 100 </p>    
+            <p class="coin-text" id="coins"> 100 </p>    
         </div>
         <div class="coin">        
             <img src="/src/static/img/dollar.png" class="coin-img">
@@ -109,9 +110,13 @@
         </header>
 
         <script>
+            window.onload = function get(){
+                getUser();
+            }
 
-            let user = localStorage.getItem('username');
-            document.getElementById('user').innerText = user;
+            let email = localStorage.getItem('email');
+            console.log(email);
+            
 
         </script>
 

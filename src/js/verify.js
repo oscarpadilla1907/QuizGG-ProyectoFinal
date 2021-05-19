@@ -18,7 +18,7 @@ function postRequest(email, pass) {
             password: pass
         }),
     };
-    return fetch(URL + 'auth/local', options)
+    return fetch(URL+'auth/local', options)
         .then(response => {
             if (response.status !== 200) {
                 alert('Introduce bien tus credenciales1');

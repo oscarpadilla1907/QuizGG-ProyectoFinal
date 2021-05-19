@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap');
 
 body{
-    background-color: rgb(59, 59, 59);
+    background-image: url("/src/static/img/backprueba2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .menu{
@@ -127,9 +129,9 @@ body{
     width: 100%;
     height: 10%;
     left: 0;
-    top: 100%;
+    top: 93%;
 
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0);
 }
 
 .footer-text{
