@@ -1,3 +1,6 @@
+const URL = 'http://localhost:8082/';
+
+//RECOGER EL MAIL Y LAS PASS PARA LLAMAR A POSTREQUEST
 function verificar() {
     let mail = document.getElementById('email').value;
     let password = document.getElementById('password').value;
@@ -5,8 +8,7 @@ function verificar() {
     postRequest(mail, password);
 }
 
-const URL = 'http://localhost:8082/';
-
+//LAMADA A STRAPI
 function postRequest(email, pass) {
     const options = {
         method: 'POST',
@@ -38,6 +40,7 @@ function postRequest(email, pass) {
         });
 }
 
+//METODO GET
 async function getRequest(url) {
     const options = {
         method: 'GET',
@@ -50,6 +53,7 @@ async function getRequest(url) {
         .then(data => data);
 }
 
+//RECOGER DATOS Y GUARDAR EN EL LOCALSTORAGE
 async function getDates(email) {
     const result = await getRequest(URL + 'users');
     console.log('result', result);
@@ -63,4 +67,3 @@ async function getDates(email) {
         }
     }
 }
-
