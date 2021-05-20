@@ -1,5 +1,6 @@
 const URL = 'http://localhost:8082';
 
+//METODO GET A STRAPI
 async function getRequest(url) {
     const options = {
         method: 'GET',
@@ -12,6 +13,7 @@ async function getRequest(url) {
         .then(data => data);
 }
 
+//GET PARA CREAR LAS CARDS
 async function getLevels() {
     console.log("hola1");
     const result = await getRequest(URL+'/levels');
