@@ -1,6 +1,6 @@
 const URL = 'http://localhost:8082';
 
-
+//LAMADA A STRAPI
 async function getRequest(url) {
     const options = {
         method: 'GET',
@@ -13,6 +13,7 @@ async function getRequest(url) {
         .then(data => data);
 }
 
+//GET PARA RECOGER LOS DATOS DE USUARIO 
 async function getUser() {
     const result = await getRequest(URL + '/users');
 
