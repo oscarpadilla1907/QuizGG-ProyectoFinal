@@ -1,9 +1,12 @@
 const URL = 'http://localhost:8082';
+
+//VARIABLES PARA LA LOGICA DE CREAR LAS CARDS
 let contador = 0;
 let contador_card = 0;
 let controlador = 0;
 let div_container;
 
+//LLAMADA A STRAPI
 async function getRequest(url) {
     const options = {
         method: 'GET',
@@ -16,6 +19,7 @@ async function getRequest(url) {
         .then(data => data);
 }
 
+//METODO GET PARA CREAR LAS CARDS
 async function getShop() {
     const result = await getRequest(URL + '/levels');
     document.getElementById('botonGenerar').className = 'hidden';
