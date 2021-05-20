@@ -1,5 +1,6 @@
 const URL = 'http://localhost:1337/auth/local/register';
 
+//METODO POST A STRAPI
 function postRequest(name, mail, pass){
     const options = {
         method: 'POST',
