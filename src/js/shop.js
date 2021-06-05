@@ -1,8 +1,13 @@
 const URL = 'http://localhost:8082';
+const URLc = 'http://localhost:8082/levels';
+let nivelesList = [];
 let contador = 0;
 let contador_card = 0;
 let controlador = 0;
 let div_container;
+let resultLength = 0;
+var lvlsDiponibles = [];
+var tiendaVacia = false;
 
 async function getRequest(url) {
     const options = {
@@ -16,12 +21,45 @@ async function getRequest(url) {
         .then(data => data);
 }
 
+
+async function buy(){
+    const result = await getRequest(URL + '/levels');
+    //let lvlsDiponibles = localStorage.getItem('NivelesDisponibles');
+    lvlsDiponibles = JSON.parse(localStorage.getItem("NivelesDisponibles"));
+    let nivelSeleccionado = "";
+    let a = 0;
+    let b = 0;
+
+    /*for (var i = 0; i < lvlsDiponibles.length; i++){
+        if (lvlsDiponibles[i] != ","){
+            if (lvlsDiponibles[i] == "["){
+                a = i+1;
+            }else if(lvlsDiponibles[i]== "]"){
+                b = i;
+                nivelSeleccionado = lvlsDiponibles.substring(a, b);
+                nivelesList.push(nivelSeleccionado);
+                console.log("Lista de niveles = "+nivelesList);
+            }
+        }
+    }*/
+
+    getShop();
+}
+
 async function getShop() {
+
     const result = await getRequest(URL + '/levels');
     document.getElementById('botonGenerar').className = 'hidden';
 
     for (let i = 0; i < result.length; i++) {
-        if (result[i].state == "lock") {
+        console.log(result[i].Name)
+        if (lvlsDiponibles.includes(result[i].Name)){
+            controlador = controlador + 1;
+            tiendaVacia = true;
+            console.log("fiera = "+tiendaVacia)
+        }else{
+            console.log("dentro = "+tiendaVacia)
+            tiendaVacia = false;
             if (contador < 2) {
 
                 //CONTROLADOR CONTAINER
@@ -94,8 +132,10 @@ async function getShop() {
                 card_body.appendChild(card_text);
 
                 let unlock_button = document.createElement('a');
+                unlock_button.value = result[i].Name;
                 unlock_button.className = 'btn';
-                unlock_button.href = '#';
+                unlock_button.setAttribute('name', result[i].Precio);
+                unlock_button.addEventListener("click", comprar, false);
                 unlock_button.id = 'btn-card';
                 unlock_button.innerText = 'Unlock';
                 card_body.appendChild(unlock_button);
@@ -129,4 +169,34 @@ async function getShop() {
             }
         }
     }
+
+    if (tiendaVacia){
+        let texto = document.createElement('p');
+        texto.innerText = "Parece que no te quedan niveles que comprar :'(";
+        texto.className = 'vacio';
+        document.body.appendChild(texto);
+    }
 }
+
+function comprar(){
+        var presio = this.name;
+        console.log(presio+" xd");
+
+        var dineroActual = parseInt(localStorage.getItem('coins'));
+
+        if( dineroActual > presio){
+            var newLevel = this.value;
+            lvlsDiponibles.push(newLevel);
+            console.log("levels = "+lvlsDiponibles);
+            localStorage.setItem("NivelesDisponibles", JSON.stringify(lvlsDiponibles));
+            dineroActual = dineroActual - presio;
+            localStorage.setItem('coins', dineroActual);
+            location.reload();
+        }else{
+            alert("No tienes dinero suficiente para comprar este nivel");
+        }
+    }
+
+        
+
+

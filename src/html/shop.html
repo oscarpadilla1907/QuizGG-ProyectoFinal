@@ -13,6 +13,13 @@
 
     <body>
 
+        <div class="coin-number2">
+            <p class="coin-text2" id="coins2"> 100 </p>    
+        </div>
+        <div class="coin2">        
+            <img src="/src/static/img/dollar.png" class="coin-img2">
+        </div>
+
         <!-- CONTENIDO DE LA PAGINA -->
         <center>
 
@@ -166,6 +173,16 @@
         </script>
         -->
         <script type="text/javascript" src="/src/js/shop.js"></script>
+        <script type="text/javascript" src="/src/js/getDatasUser.js"></script>
+        <script>
+            window.onload = function get(){
+                buy();
+            }
+
+            let money = localStorage.getItem('coins');
+            let dinero = document.getElementById('coins2');
+            dinero.innerText = money;
+        </script>
     </body>
 
 </html>

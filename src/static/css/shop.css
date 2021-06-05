@@ -105,3 +105,36 @@ box-shadow: 9px 4px 15px -4px #000000;
 .hidden{
     visibility: hidden;
 }
+
+.coin-number2{
+    position: absolute;
+    right: 5%;
+}
+
+.coin2{
+    position: absolute;
+    right: 11%;
+    width: 50px;
+    height: 50px;
+    top: 9.5%;
+}
+
+.coin-img2{
+    width: 100%;
+    height: 100%;
+}
+
+.coin-text2{
+    font-family: 'Sora', sans-serif;
+    font-size: 50px;
+    line-height: 63px;
+    text-align: center;
+    color: white;
+}
+
+.vacio{
+    text-align: center;
+    color: white;
+    font-family: 'Sora', sans-serif;
+    font-size: 30px;
+}

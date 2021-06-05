@@ -1,3 +1,5 @@
+var levels = ["Anime"];
+
 function verificar() {
     let mail = document.getElementById('email').value;
     let password = document.getElementById('password').value;
@@ -60,6 +62,8 @@ async function getDates(email) {
             localStorage.setItem('email', email);
             localStorage.setItem('username', result[i].username);
             localStorage.setItem('coins', result[i].coins);
+            localStorage.setItem('lvlActual', undefined);
+            localStorage.setItem("NivelesDisponibles", JSON.stringify(levels));
         }
     }
 }

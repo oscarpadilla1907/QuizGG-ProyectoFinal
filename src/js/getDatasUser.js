@@ -23,7 +23,7 @@ async function getUser() {
             nombre.innerText = result[i].username;
 
             let dinero = document.getElementById('coins');
-            dinero.innerText = result[i].coins;
+            dinero.innerText = localStorage.getItem('coins');
         }
     }
     
