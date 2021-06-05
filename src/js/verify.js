@@ -1,11 +1,6 @@
-<<<<<<< HEAD
 var levels = ["Anime"];
-
-=======
 const URL = 'http://localhost:8082/';
-
 //RECOGER EL MAIL Y LAS PASS PARA LLAMAR A POSTREQUEST
->>>>>>> 224b87fc8f1b627fcc3c77cb57bb4ed3bcb92474
 function verificar() {
     let mail = document.getElementById('email').value;
     let password = document.getElementById('password').value;

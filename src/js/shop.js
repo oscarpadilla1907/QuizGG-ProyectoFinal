@@ -1,11 +1,7 @@
 const URL = 'http://localhost:8082';
-<<<<<<< HEAD
 const URLc = 'http://localhost:8082/levels';
 let nivelesList = [];
-=======
-
 //VARIABLES PARA LA LOGICA DE CREAR LAS CARDS
->>>>>>> 224b87fc8f1b627fcc3c77cb57bb4ed3bcb92474
 let contador = 0;
 let contador_card = 0;
 let controlador = 0;
@@ -27,7 +23,7 @@ async function getRequest(url) {
         .then(data => data);
 }
 
-<<<<<<< HEAD
+
 
 async function buy(){
     const result = await getRequest(URL + '/levels');
@@ -53,9 +49,7 @@ async function buy(){
     getShop();
 }
 
-=======
-//METODO GET PARA CREAR LAS CARDS
->>>>>>> 224b87fc8f1b627fcc3c77cb57bb4ed3bcb92474
+
 async function getShop() {
 
     const result = await getRequest(URL + '/levels');
