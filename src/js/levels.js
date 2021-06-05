@@ -7,6 +7,7 @@ var correctas = 0;
 var falladas = 0;
 var monedasGanadas = 0;
 
+//METODO GET A STRAPI
 async function getRequest(url) {
     const options = {
         method: 'GET',
@@ -19,6 +20,7 @@ async function getRequest(url) {
         .then(data => data);
 }
 
+//GET PARA CREAR LAS CARDS
 async function getLevels() {
     console.log("hola1 " + lvlsDiponibles);
     const result = await getRequest(URL + '/levels');
