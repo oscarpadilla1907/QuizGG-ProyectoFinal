@@ -1,4 +1,4 @@
-const URL = 'http://localhost:8082';
+const URL = 'https://immense-cove-70793.herokuapp.com';
 
 async function getRequest(url) {
     const options = {

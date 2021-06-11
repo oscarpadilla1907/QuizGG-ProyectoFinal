@@ -1,5 +1,5 @@
-const URL = 'http://localhost:8082';
-const URLc = 'http://localhost:8082/levels';
+const URL = 'https://immense-cove-70793.herokuapp.com';
+const URLc = 'https://immense-cove-70793.herokuapp.com/levels';
 let nivelesList = [];
 //VARIABLES PARA LA LOGICA DE CREAR LAS CARDS
 let contador = 0;
@@ -161,7 +161,7 @@ async function getShop() {
                     contador_card = 0;
 
                     //SI SE QUEDA UNA CARTA SUELTA EN EL CONTAINER SE AÑADE AL BODY
-                } else if (contador == 1 && contador_card == 1 && controlador == result.length) {
+                } else if (contador == 1 && contador_card == 1) {
 
                     //AÑADIR AL BODY EL CONTAINER
                     document.body.appendChild(div_container);
@@ -173,13 +173,6 @@ async function getShop() {
             }
         }
     }
-
-    if (tiendaVacia){
-        let texto = document.createElement('p');
-        texto.innerText = "Parece que no te quedan niveles que comprar :'(";
-        texto.className = 'vacio';
-        document.body.appendChild(texto);
-    }
 }
 
 function comprar(){
@@ -188,7 +181,7 @@ function comprar(){
 
         var dineroActual = parseInt(localStorage.getItem('coins'));
 
-        if( dineroActual > presio){
+        if( dineroActual >= presio){
             var newLevel = this.value;
             lvlsDiponibles.push(newLevel);
             console.log("levels = "+lvlsDiponibles);

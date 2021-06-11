@@ -1,5 +1,5 @@
 var levels = ["Anime"];
-const URL = 'http://localhost:8082/';
+const URL = 'https://immense-cove-70793.herokuapp.com/';
 //RECOGER EL MAIL Y LAS PASS PARA LLAMAR A POSTREQUEST
 function verificar() {
     let mail = document.getElementById('email').value;

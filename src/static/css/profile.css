@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap');
+
+
+.container{
+    margin-top: 250px;
+}
+#user{
+    background-color: #00000098;
+    color: white;
+    font-family: 'Sora', sans-serif;
+}
+
+#info{
+    background-color: #00000098;
+    color: white;
+    font-family: 'Sora', sans-serif;
+}
+
+.btn-info{
+    background-color: yellowgreen;
+}
+
+.text{
+    margin-top: 50px;
+}
+
+.quizgg{
+    font-family: 'Sora', sans-serif;
+    font-size: 50px;
+    line-height: 63px;
+    color: white;
+}

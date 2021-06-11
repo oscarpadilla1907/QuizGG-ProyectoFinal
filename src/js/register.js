@@ -1,4 +1,4 @@
-const URL = 'http://localhost:1337/auth/local/register';
+const URL = 'https://immense-cove-70793.herokuapp.com/auth/local/register';
 
 //METODO POST A STRAPI
 function postRequest(name, mail, pass){
