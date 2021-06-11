@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap');
+
+body{
+    background-image: url("/src/static/img/backprueba2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.menu{
+    position: absolute;
+    width: 79px;
+    height: 100%;
+    left: -70px;
+    top: 0px;
+    background: #00a716;
+    transition: all 0.7s;
+    position: fixed;
+}
+
+.menu:hover{
+    position: absolute;
+    width: 79px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #0eff1a36;
+    transition: all 0.7s;
+    position: fixed;
+}
+
+
+.home{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 17px;
+    top: 5%;
+    transition: all 0.7s;
+}
+
+.home-img{
+    width: 100%;
+    height: 100%;
+}
+
+.profile{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 12px;
+    top: 40%;
+    transition: all 0.7s;
+}
+
+.profile-img{
+    width: 100%;
+    height: 100%;
+}
+
+.shop{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 14px;
+    top: 50%; 
+    transition: all 0.7s;
+}
+
+.shop-img{
+    width: 100%;
+    height: 100%;
+}
+
+.levels{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 17px;
+    top: 60%;
+    transition: all 0.7s;
+}
+
+.levels-img{
+    width: 100%;
+    height: 100%;
+}
+
+.exit{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 17px;
+    top: 90%;
+    transition: all 0.7s;
+}
+
+.exit-img{
+    width: 100%;
+    height: 100%;
+}
+
+.exit:hover{
+    transform: scale(1.15);
+    transition: all 0.7s;
+}
+
+.home:hover{
+    transform: scale(1.15);
+    transition: all 0.7s;
+}
+
+.profile:hover{
+    transform: scale(1.15);
+    transition: all 0.7s;
+}
+
+.shop:hover{
+    transform: scale(1.15);
+    transition: all 0.7s;
+}
+
+.levels:hover{
+    transform: scale(1.15);
+    transition: all 0.7s;
+}
+
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    left: 0;
+    top: 93%;
+
+    background: rgba(0, 0, 0, 0);
+}
+
+.footer-text{
+    color:white;
+    font-family: 'Sora', sans-serif;
+    padding-top: 15px;
+}
