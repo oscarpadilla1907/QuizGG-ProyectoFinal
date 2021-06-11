@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Gruppo&family=Saira+Extra+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&family=Gruppo&family=Saira+Extra+Condensed:wght@300&family=Syncopate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+
+
+body{
+    margin-top: 250px;
+    background-color: rgba(255, 255, 255, 0.233);
+}
+
+
+.main-section{
+    margin:0 auto;
+    margin-top: 30%;
+    padding: 0;
+    
+
+}
+
+.user-img{
+    margin-top: -90px;
+    margin-bottom: 35px;
+}
+
+.user-img img{
+    width: 180px;
+    height: 180px;
+
+
+}
+
+.modal-content{
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0 20px;
+    box-shadow: 0px 0px 0px #030516;
+}
+
+.notetask{
+    font-size: 90px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 5%;
+    font-family: 'Orbitron', sans-serif;
+}
+.notetask2{
+    font-size: 90px;
+    text-align: center;
+    font: bold;
+    font: monospace;
+    color: rgb(111, 207, 127);
+    margin-top: 5%;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.img{
+    transition: all 1s;
+}
+
+
+.form-control:focus{
+    background-color: #ffffff00;
+    color: rgb(0, 0, 0);
+}
+
+.form-control{
+    background-color: #ffffff00;
+    color: rgb(0, 0, 0);
+    font-family: 'Advent Pro', sans-serif;
+    font-family: 'Gruppo', cursive;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+.form-control::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+.form-group::before{
+    font-family: "Font awesome\ 5 free";
+    position: absolute;
+    left: 28px;
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+.form-group input{
+    height: 60px;
+    font-size: 30px;
+    border: 0;
+    padding-left: 60px;
+    box-shadow: 0px 0px 4px rgb(0, 0, 0);
+    transition: all 0.45s;
+}
+
+.form-group input:focus{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 4px rgb(111, 207, 127);
+}
+
+.form-group input:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 4px rgb(111, 207, 127);
+}
+
+.form-group#user::before{
+    content: "\f007";
+    color: rgb(0, 0, 0);
+
+}
+
+.form-group#email::before{
+    content: "\f0e0";
+    color: rgb(0, 0, 0);
+
+}
+
+.form-group#pass::before{
+    content: "\f13e";
+    color: rgb(0, 0, 0);
+
+}
+
+.forgot a{
+    font-family: 'Advent Pro', sans-serif;
+    font-family: 'Gruppo', cursive;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    font-size: 23px;
+    color: white;
+}
+
+.btn{
+    background-color: rgb(111, 207, 127);
+    color: white;
+    width: 50%; 
+    transition: all 0.4s;
+    font-size: 22px;
+    font-family: 'Advent Pro', sans-serif;
+    font-family: 'Gruppo', cursive;
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+.btn:hover{
+    transform: scale(1.1, 1.1);
+    background-color: rgb(63, 214, 88);
+}
+
+.rpg{
+    display: flex;
+    justify-content: center;
+}
+
+.avatar{
+    background-color: #30303000;
+    width: 100%;
+}
+
+.avatar h2{
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.ul-avatar {
+    list-style: none;
+    display: flex;
+}
+.li-avatar {
+
+    margin-right: 15px;
+}
+.input-avatar {
+    visibility:hidden;
+}
+.label-avatar {
+    cursor: pointer;
+}
+.input-avatar:checked + label {
+    transform: scale(1.2, 1.2);
+}
+
+.avatar-foto{
+    width: 100px;
+    height: 100px;
+}
+
+.orange{
+    color: rgb(250, 79, 0);
+}
