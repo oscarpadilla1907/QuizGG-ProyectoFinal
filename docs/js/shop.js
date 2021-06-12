@@ -96,7 +96,7 @@ async function getShop() {
                 //CARD HEADER CHILDS
                 let img_header = document.createElement('img');
                 img_header.className = 'coin';
-                img_header.src = "/src/static/img/dollar.png";
+                img_header.src = "static/img/dollar.png";
                 card_header.appendChild(img_header);
 
                 //VER DIFICULTAD
