@@ -1,0 +1,72 @@
+
+.text{
+    margin-top: 50px;
+}
+
+.quizgg{
+    font-family: 'Sora', sans-serif;
+    font-size: 50px;
+    line-height: 63px;
+    color: white;
+}
+
+.GG{
+    color: #53ff31;
+}
+
+.pregunta{
+    display: flex;
+    justify-content: center;
+}
+
+.pregunta-text{
+    margin-top: 4%;
+    color:white;
+    font-family: 'Sora', sans-serif;
+    font-size: 28px;
+}
+
+.container{
+    background-color: #f831ff00;
+    margin-top: 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 450px;
+    height: 60px;
+    color:rgb(0, 0, 0);
+    font-family: 'Sora', sans-serif;
+    background-color: #ffffff; 
+    transition: all 0.7s; 
+}
+
+.card:hover{
+    background-color: #97ff82;
+    transform: scale(1.015);
+    transition: all 0.7s;
+}
+
+.card-text{
+  padding-top: 2.5%;
+  padding-left: 7%;
+  font-size: 25px;
+}
+
+.exit-{
+    width: 90px;
+    height: 90px;
+    transition: all 0.7s;
+}
+
+.exit-:hover{
+    transform: scale(1.2);
+    transition: all 0.7s;
+}
+
+#btn-salir{
+    background-color: #1ba000;
+    color: white;
+}
