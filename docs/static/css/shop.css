@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap');
+
+.icon{
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+
+.icon-img{
+    width: 120px;
+    height: 120px;
+}
+
+.text{
+    margin-top: -10px;
+}
+
+.quizgg{
+    font-family: 'Sora', sans-serif;
+    font-size: 50px;
+    line-height: 63px;
+    color: white;
+}
+
+.GG{
+    color: #53ff31;
+}
+
+.container{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+.card{
+    font-family: 'Sora', sans-serif;
+    color: white;
+    background-color: #272727;
+    width: 35%;
+    height:210px;
+    margin: 50px;
+}
+
+.coin{
+    width: 25px;
+    height: 25px;
+}
+
+.lock-img{
+    width: 25px;
+    height: 25px;
+}
+
+#btn-card{
+    position:relative;
+    left: 38%;
+    background-color: #53ff31;
+    color:black;
+    transition:all 0.7s;
+}
+
+#btn-card:hover{
+    transform:scale(1.1);
+    transition:all 0.7s;
+}
+
+.card-body{
+    background-color: #272727;
+    -webkit-box-shadow: 9px 6px 15px -2px #000000; 
+    box-shadow: 9px 6px 15px -2px #000000;
+}
+
+.facil{
+    float:right;
+    color: rgb(0, 110, 255);
+}
+
+.mid{
+    float:right;
+    color: yellow;
+}
+
+.hard{
+    float:right;
+    color: red;
+}
+
+.card-header{
+    background-color: #161616;
+    -webkit-box-shadow: 9px 4px 15px -4px #000000; 
+box-shadow: 9px 4px 15px -4px #000000;
+}
+
+.btn{
+    color:white;
+    background-color:rgb(0, 179, 0);
+    transition: all 0.7s;
+}
+
+.btn:hover{
+    color:white;
+    transform: scale(1.1);
+    transition: all 0.7s;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.coin-number2{
+    position: absolute;
+    right: 5%;
+}
+
+.coin2{
+    position: absolute;
+    right: 11%;
+    width: 50px;
+    height: 50px;
+    top: 9.5%;
+}
+
+.coin-img2{
+    width: 100%;
+    height: 100%;
+}
+
+.coin-text2{
+    font-family: 'Sora', sans-serif;
+    font-size: 50px;
+    line-height: 63px;
+    text-align: center;
+    color: white;
+}
+
+.vacio{
+    text-align: center;
+    color: white;
+    font-family: 'Sora', sans-serif;
+    font-size: 30px;
+}

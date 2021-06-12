@@ -1,0 +1,174 @@
+.icon{
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+
+.icon-img{
+    width: 120px;
+    height: 120px;
+}
+
+.text{
+    margin-top: -10px;
+}
+
+.quizgg{
+    font-family: 'Sora', sans-serif;
+    font-size: 50px;
+    line-height: 63px;
+    color: white;
+}
+
+.GG{
+    color: #53ff31;
+}
+
+.action-img img{
+    margin-left: 130px;
+    margin-right: 100px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap');
+
+.icon{
+    margin-top: 80px;
+}
+
+.icon-img{
+    width: 120px;
+    height: 120px;
+}
+
+.text{
+    margin-top: -30px;
+}
+
+.quizgg{
+    font-family: 'Sora', sans-serif;
+    font-size: 50px;
+    line-height: 63px;
+    color: white;
+}
+
+.GG{
+    color: #53ff31;
+}
+
+.text1{
+    font-family: 'Sora', sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    color: white;
+}
+
+.lema{
+    margin-top: -30px;
+    margin-bottom: 70px;
+}
+
+.exit:hover{
+    transform: scale(1.15);
+    transition: all 0.7s;
+}
+
+.home:hover{
+    transform: scale(1.15);
+    transition: all 0.7s;
+}
+
+.profile:hover{
+    transform: scale(1.15);
+    transition: all 0.7s;
+}
+
+.shop:hover{
+    transform: scale(1.15);
+    transition: all 0.7s;
+}
+
+.levels:hover{
+    transform: scale(1.15);
+    transition: all 0.7s;
+}
+
+.mult{
+    width: 70px;
+    height: 70px;
+    transition: all 0.7s;
+}
+
+.mult:hover{
+    transform: scale(1.15);
+    transition: all 0.7s;
+}
+
+.action-img img{
+    margin-left: 130px;
+    margin-right: 100px;
+}
+
+.help{
+    margin-top: 50px;
+}
+
+.coin{
+    position: absolute;
+width: 50px;
+height: 50px;
+right: 226px;
+top: 60px;
+}
+
+.coin-img{
+    width: 100%;
+    height: 100%;
+}
+
+.coin-number{
+    position: absolute;
+    width: 146px;
+    height: 63px;
+    right: 96px;
+    top: 6px;
+}
+
+.coin-text{
+    font-family: 'Sora', sans-serif;
+    font-size: 50px;
+    line-height: 63px;
+    text-align: center;
+    color: white;
+}
+
+.user{
+    position: absolute;
+    width: 268px;
+    height: 63px;
+    left: 104px;
+    top: 75px;
+}
+
+.user-name{
+    font-family: 'Sora', sans-serif;
+    font-size: 30px;
+    line-height: 63px;
+    text-align: center;
+    color: white;
+}
+
+.menu:hover .user{
+    margin-top: 200px;
+}
+
+.user-image{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 204px;
+    top: 45px;
+}
+
+.user-png{
+    width: 100%;
+    height: 100%;
+}
